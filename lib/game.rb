@@ -2,7 +2,8 @@ require_relative 'board'
 
 class Game
 
-	def initialize
+	def initialize(*board)
+		@board = board
 		over = false
 	end
 
@@ -10,5 +11,6 @@ class Game
 	end
 
 	def over?
+		false
 	end
 end
